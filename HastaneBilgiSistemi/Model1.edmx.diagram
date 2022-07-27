@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0935263bb07a49d3a72bb44635560aaa" Name="Diagram1">
+        <EntityTypeShape EntityType="HastaneSistemModel.TblAdmin" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HastaneSistemModel.TblBolum" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HastaneSistemModel.TblDoktor" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HastaneSistemModel.TblLaboratuvar" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HastaneSistemModel.TblMuayene" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="HastaneSistemModel.FK_TblMuayene_TblBolum" ManuallyRouted="false" />
+        <AssociationConnector Association="HastaneSistemModel.FK_TblLaboratuvar_TblDoktor" ManuallyRouted="false" />
+        <AssociationConnector Association="HastaneSistemModel.FK_TblMuayene_TblDoktor" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HastaneSistemModel.TblHasta" Width="1.5" PointX="3.375" PointY="8" />
+        <AssociationConnector Association="HastaneSistemModel.FK_TblLaboratuvar_TblHasta" />
+        <AssociationConnector Association="HastaneSistemModel.FK_TblMuayene_TblHasta" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
